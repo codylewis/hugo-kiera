@@ -3,7 +3,11 @@
         <h6>{{ replace .Site.Copyright "{year}" now.Year | markdownify }} | <a href="{{.Site.BaseURL}}/index.xml">Subscribe</a></h6>
     </footer>
 </div>
+{{ if .Params.hasCodePen }}
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+{{ end }}
 <script src="{{ "js/scripts.js" | relURL }}"></script>
+
 </body>
 
 </html>

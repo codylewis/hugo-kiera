@@ -10,10 +10,7 @@
 
     var disqus_loaded = false;
     var disqus_shortname = "{{ .Site.DisqusShortname }}";
-    var disqus_button = document.getElementById("show-comments");
 
-    disqus_button.style.display = "";
-    disqus_button.addEventListener("click", disqus, false);
     (function disqus() {
       if (!disqus_loaded) {
         disqus_loaded = true;

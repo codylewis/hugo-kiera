@@ -220,13 +220,13 @@ a {
   box-shadow: 0 3px 3px #bbbbbb;
 }
 
-.full-image, figure.full img, img[src*="full"] {
+.full-image, figure.full img, img[src$="full"] {
   width: 100%;
   box-shadow: 0 3px 3px #bbbbbb;
 }
 
 @supports (width: 100vw) {
-  .full-image, figure.full img, img[src*="full"] {
+  .full-image, figure.full img, img[src$="full"] {
     width: 100vw;
     position: relative;
     left: 50%;
@@ -236,13 +236,13 @@ a {
   }
 }
 
-.mid-image, figure.mid img, img[src*="mid"] {
+.mid-image, figure.mid img, img[src$="mid"] {
   width: 100%;
   box-shadow: 0 3px 3px #bbbbbb;
 }
 
 @supports (width: 100vw) {
-  .mid-image, figure.mid img, img[src*="mid"] {
+  .mid-image, figure.mid img, img[src$="mid"] {
     width: 800px;
     position: relative;
     left: 50%;
@@ -251,7 +251,7 @@ a {
     margin-right: -400px;
   }
   @media only screen and (max-width: 800px) {
-    .mid-image, figure.mid img, img[src*="mid"] {
+    .mid-image, figure.mid img, img[src$="mid"] {
       width: 100%;
       left: 0;
       right: 0;
@@ -260,7 +260,7 @@ a {
   }
 }
 
-.float-image, figure.float img, img[src*="float"] {
+.float-image, figure.float img, img[src$="float"] {
   width: 300px;
   float: left;
   margin: 0 1em 1em -3em;
@@ -268,14 +268,14 @@ a {
 }
 
 @media only screen and (max-width: 800px) {
-  .float-image, figure.float img, img[src*="float"] {
+  .float-image, figure.float img, img[src$="float"] {
     float: none;
     margin: 0;
     width: 100%;
   }
 }
 
-.float-image-right, figure.float-right img, img[src*="float-right"] {
+.float-image-right, figure.float-right img, img[src$="float-right"] {
   width: 300px;
   float: right;
   margin: 0 -3em 1em 1em;
@@ -283,7 +283,7 @@ a {
 }
 
 @media only screen and (max-width: 800px) {
-  .float-image-right, figure.float-right img, img[src*="float-right"] {
+  .float-image-right, figure.float-right img, img[src$="float-right"] {
     float: none;
     margin: 0;
     width: 100%;
